@@ -95,6 +95,7 @@ Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos
 | ------------- | ----------------------------------- |
 | `/series`     | Retorna todas as séries             |
 | `/series/:id` | Retorna apenas uma série específica |
+| `/:titulo`    | Retorna a série por nome            |
 
 ---
 

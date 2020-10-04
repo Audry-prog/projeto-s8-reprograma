@@ -40,7 +40,7 @@ const getMusicById = (req, res) => {
 
 const getMusicsSingle = (req, res) => {
     const musicasFiltradasPorSingle = musicas.filter((musica) => musica.single === true);
-    const bandasSingle = musicasFiltradasPorSingle.map((musica) => ({"banda": musica.banda, "titulo": musica.titulo}));
+    const bandasSingle = musicasFiltradasPorSingle.map((musica) => ({"titulo": musica.titulo, "banda": musica.banda}));
     res.status(200).send(bandasSingle);
 }
 
@@ -73,9 +73,15 @@ const getAllSeries = (req, res) => {
 
 const getSerieById = (req, res) => {
 	const id = req.params.id;
-	const foundID = series.find((serie) => serie.id == id);
-	res.send(foundID);
+	const temporadaPorId = series.find((serie) => serie.id == id);
+	res.send(temporadaPorId);
 };
+
+const getSerieByTitulo = (req, res) => {
+    const titulo = req.params.titulo;
+    const seriePorTitulo = series.find((serie) => serie.titulo == titulo);
+    res.send(seriePorTitulo);
+}
 
 module.exports = {
 	getAlbumByTitle,
@@ -90,5 +96,6 @@ module.exports = {
 	getAlbum,
 	getAllAlbuns,
 	getAllSeries,
-	getSerieById
+    getSerieById,
+    getSerieByTitulo,
 };
