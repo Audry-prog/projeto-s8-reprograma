@@ -4,78 +4,88 @@
     "titulo": "Black Sails",
     "genero": "Ficção Científica",
     "autor": ["Robert Levine", "Jonathan Steinberg"],
+    "temporadas": 4,
     "ano": 2014
   },
 
   {
-    "id": 2,
-    "titulo": "La Casa de Papel",
-    "genero": "Policial",
-    "autor": "Álex Pina",
-    "ano": 2017
+	"id": 2,
+	"titulo": "La Casa de Papel",
+	"genero": "Policial",
+	"autor": "Álex Pina",
+	"temporadas": 2,
+	"ano": 2017
   },
 
-  {  
-    "id": 3,
-    "titulo": "Peaky Blinders: Sangue, Apostas e Navalhas",
-    "genero": "Drama",
-    "autor": "Steven Knight",
-    "ano": 2013
+  {
+	"id": 3,
+	"titulo": "Peaky Blinders: Sangue, Apostas e Navalhas",
+	"genero": ["Ficção Histórica", "Crime"],
+	"autor": "Steven Knight",
+	"temporadas": 5,
+	"ano": 2013
   },
 
-  { 
-    "id": 4,
-    "titulo": "Black Mirror",
-    "genero": "Ficção Científica",
-    "autor": "Charlie Brooker",
-    "ano": 2011
+  {
+	"id": 4,
+	"titulo": "Black Mirror",
+	"genero": ["Ficção Científica", "Distopia", "Humor Negro"],
+	"autor": "Charlie Brooker",
+	"temporadas": 5,
+	"ano": 2011
   },
 
-  { 
-    "id": 5,
-    "titulo": "Vikings",
-    "genero": "Épico",
-    "autor": "Michael Hirst",
-    "ano": 2013
+  {
+	"id": 5,
+	"titulo": "Vikings",
+	"genero": "Épico",
+	"autor": "Michael Hirst",
+	"temporadas": 6,
+	"ano": 2013
   },
 
-  { 
-    "id": 6,
-    "titulo": "Dark",
-    "genero": "Suspense",
-    "autor": ["Baran bo Odar", "Jantje Friese"],
-    "ano": 2017
+  {
+	"id": 6,
+	"titulo": "Dark",
+	"genero": ["Suspense", "Sobrenatural", "Mistério"],
+	"autor": ["Baran bo Odar", "Jantje Friese"],
+	"temporadas": 3,
+	"ano": 2017
   }, 
 
   {
-    "id": 7,
-    "titulo": "House of Cards",
-    "genero": "Drama Político",
-    "autor": "Beau Willimon",
-    "ano": 2013
-  },
-
-  { 
-    "id": 8,
-    "titulo": "The Alienist",
-    "genero": "Drama Policial",
-    "autor": ["Hossein Amini", "John Sayles", "Gina Gionfrido", "Cary Joji Fukunaga"],
-    "ano": 2018
+	"id": 7,
+	"titulo": "House of Cards",
+	"genero": "Drama Político",
+	"autor": "Beau Willimon",
+	"temporadas": 6,
+	"ano": 2013
   },
 
   {
-    "id": 9,
-    "titulo": "Narcos",
-    "genero": "Drama Policial",
-    "autor": ["Chris Brancato", "Carlo Bernard", "Doug Miro"],
-    "ano": 2015
+	"id": 8,
+	"titulo": "The Alienist",
+	"genero": ["Drama Policial", "Suspense"],
+	"autor": ["Hossein Amini", "John Sayles", "Gina Gionfrido", "Cary Joji Fukunaga"],
+	"temporadas": 1,
+	"ano": 2018
   },
 
-  { 
-    "id": 10,
-    "titulo": "Breaking Bad",
-    "genero": "Suspense",
-    "autor": "Vince Gilligan",
-    "ano": 2018
+  {
+	"id": 9,
+	"titulo": "Narcos",
+	"genero": ["Drama Policial","Biografia"],
+	"autor": ["Chris Brancato", "Carlo Bernard", "Doug Miro"],
+	"temporadas": 3,
+	"ano": 2015
+  },
+
+  {
+	"id": 10,
+	"titulo": "Breaking Bad",
+    "genero": ["Suspense",  "Western Contemporâneo", "Humor Negro"],
+	"autor": "Vince Gilligan",
+	"temporadas": 3,
+	"ano": 2018
   }
 ]

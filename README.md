@@ -28,10 +28,10 @@ Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos
 
 #### Contratos que deverão ser entregues:
 
-| Recurso         | Descrição                            |
-| --------------- | ------------------------------------ |
-| `/artistas`     | Retorna todos os artistas            |
-| `/artista/:nome`| Retorna apenas um artista específico |
+| Recurso                     | Descrição                            |
+| --------------------------- | ------------------------------------ |
+| `/artistas`                 | Retorna todos os artistas            |
+| `/artista/[nome-do-artista]`| Retorna apenas um artista específico |
 
 ---
 
@@ -53,12 +53,12 @@ Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos
 
 #### Contratos que deverão ser entregues:
 
-| Recurso          | Descrição                                  |
-| ---------------- | ------------------------------------------ |
-| `/musicas`       | Retorna todas as músicas                   |
-| `/musicas/:id`   | Retorna apenas uma música específica       |
-| `/musicas/banda` | Retorna todas as músicas com a mesma banda |
-| `/musicas/single`| Retorna todas as músicas gravadas sólo     |
+| Recurso                    | Descrição                                  |
+| -------------------------- | ------------------------------------------ |
+| `/musicas`                 | Retorna todas as músicas                   |
+| `/musicas/:id`             | Retorna apenas uma música específica       |
+| `/musicas/[nome-da-banda]` | Retorna todas as músicas com a mesma banda |
+| `/musicas/single`          | Retorna todas as músicas gravadas sólo     |
 
 ---
 
@@ -84,6 +84,7 @@ Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos
     "titulo": "Black Sails",
     "genero": "Ficção Científica",
     "autor": ["Robert Levine", "Jonathan Steinberg"],
+    "temporadas": 4,
     "ano": 2014
 }
 ```
