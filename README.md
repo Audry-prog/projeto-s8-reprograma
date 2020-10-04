@@ -58,7 +58,7 @@ Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos
 | `/musicas`       | Retorna todas as músicas                   |
 | `/musicas/:id`   | Retorna apenas uma música específica       |
 | `/musicas/banda` | Retorna todas as músicas com a mesma banda |
-| `/musicas/single`| Retorna todas músicas gravadas sólo        |
+| `/musicas/single`| Retorna todas as músicas gravadas sólo     |
 
 ---
 
@@ -68,8 +68,9 @@ Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos
 | --------------------------------- | ---------------------------------------------- |
 | `/album`                          | Retorna todos os albúns                        |
 | `/albuns/:titulo`                 | Retorna o álbum por nome de uma música         |
+| `/banda`                          | Retorna todas as bandas                        |
 | `/musicas/albuns/[nome-do-album]` | Retorna um álbum específico filtrado pelo nome |
-| `gravadora`                       | Retorna todas as gravadoras                    |
+| `/gravadora`                      | Retorna todas as gravadoras                    |
 
 ---
 
@@ -80,8 +81,10 @@ Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos
 ```json
 {
   "id": 1,
-  "titulo": "Suits",
-  "duracao": "9 temporadas"
+    "titulo": "Black Sails",
+    "genero": "Ficção Científica",
+    "autor": ["Robert Levine", "Jonathan Steinberg"],
+    "ano": 2014
 }
 ```
 

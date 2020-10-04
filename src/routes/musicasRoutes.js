@@ -13,5 +13,7 @@ route.get('/gravadora', controller.getAllRecords);
 route.get('/album', controller.getAllAlbuns);
 route.get('/musicas/album/:album', controller.getAlbum);
 route.get('/albuns/:titulo', controller.getAlbumByTitle);
+route.get('/series', controller.getAllSeries);
+route.get('/serie/:id', controller.getSerieById);
 
 module.exports = route;

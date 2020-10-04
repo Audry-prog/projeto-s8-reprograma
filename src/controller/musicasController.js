@@ -1,5 +1,6 @@
 const musicas = require('../model/musicas.json');
 const artistas = require('../model/artistas.json');
+const series = require('../model/series.json');
 
 const getAllArtists = (req, res) => {
     console.log(req.url);
@@ -66,16 +67,28 @@ const getAllRecords = (req, res) => {
     res.status(200).send(gravadora);
 }
 
-module.exports = { 
-    getAlbumByTitle, 
-    getAllMusics, 
-    getMusicById, 
-    getAllArtists, 
-    getArtistByName, 
-    getByBand,
-    getAllBands, 
-    getMusicsSingle, 
-    getAllRecords,
-    getAlbum,
-    getAllAlbuns
+const getAllSeries = (req, res) => {
+	res.send(series);
+};
+
+const getSerieById = (req, res) => {
+	const id = req.params.id;
+	const foundID = series.find((serie) => serie.id == id);
+	res.send(foundID);
+};
+
+module.exports = {
+	getAlbumByTitle,
+	getAllMusics,
+	getMusicById,
+	getAllArtists,
+	getArtistByName,
+	getByBand,
+	getAllBands,
+	getMusicsSingle,
+	getAllRecords,
+	getAlbum,
+	getAllAlbuns,
+	getAllSeries,
+	getSerieById
 };
