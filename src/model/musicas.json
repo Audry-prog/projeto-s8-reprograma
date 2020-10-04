@@ -1,0 +1,104 @@
+[
+    {
+        "id": 1,
+        "titulo": "Sweet Child O' Mine",
+        "banda": "Guns N' Roses",
+        "anoLancamento": 1987,
+        "genero": ["Heavy metal", "Hard Rock", "Rock"],
+        "gravadora": "Geffen Records",
+        "duracao": "05:56",
+        "single": false,
+        "album": "Appetite for Destruction"
+    },
+
+    {
+        "id": 2,
+        "titulo": "Nothing Else Matters",
+        "banda": "Metallica",
+        "anoLancamento": 1992,
+        "genero": ["Power Ballad", "Heavy Metal"],
+        "gravadora": "Sony Music",
+        "duracao": "06:28",
+        "single": true,
+        "album": ""
+    },
+
+    {
+        "id": 3,
+        "titulo": "Californication",
+        "banda": "Red Hot Chili Peppers",
+        "anoLancamento": 1999,
+        "genero": ["Rock alternativo", "Funk rock"],
+        "gravadora": "Warner Bros. Records",
+        "duracao": "05:21",
+        "single": false,
+        "album": "Californication"
+    },
+
+    { 
+        "id": 4,
+        "titulo": "November Rain",
+        "banda": "Guns N'Roses",
+        "anoLancamento": 1992,
+        "genero": ["Rock alternativo", "Funk rock", "Power Balland"],
+        "gravadora": "Geffen Records",
+        "duracao": "08:57",
+        "single": false,
+        "album": "Californication"
+    },
+
+    {
+        "id": 5,
+        "titulo": "Numb",
+        "banda": "Linkin Park",
+        "anoLancamento": 2003,
+        "genero": [
+            "Rock alternativo",
+            "Nu Metal",
+            "Metal Alternativo"
+        ],
+        "gravadora": "Warner Bros. Records",
+        "duracao": "03:08",
+        "single": true,
+        "album": ""
+    },
+
+    {
+        "id": 6,
+        "titulo": "Bring Me To Life",
+        "banda": "Evanescence",
+        "anoLancamento": 2002,
+        "genero": [
+            "Gothic Metal",
+            "Nu Metal",
+            "Metal Alternativo"
+        ],
+        "gravadora": "Wind-up Records",
+        "duracao": "03:56",
+        "single": true,
+        "album": ""
+    },
+    
+    {   "id": 7,
+        "titulo": "The Reason",
+        "banda": "Hoobastank",
+        "anoLancamento": 2004,
+        "genero": ["Pop Rock", "Rock Alternativo"],
+        "gravadora": "Wind-up Records",
+        "duracao": "03:53",
+        "single": false,
+        "album": "The Reason"
+    },
+
+    {
+        "id": 8,
+        "titulo": "The Unforgiven",
+        "banda": "Metallica",
+        "anoLancamento": 1991,
+        "genero": "Heavy Metal",
+        "gravadora": "Elektra Records",
+        "duracao": "06:27",
+        "single": false,
+        "album": "Black Album"
+    }
+]

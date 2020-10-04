@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "artista": "Beyoncé",
+      "nome": "Beyoncé Giselle Knowles-Carter",
+      "genero": "feminino",
+      "profissao": ["cantora", "compositora", "atriz", "modelo", "dançarina", "produtora musical", "roteirista"]
+    },
+
+    {
+      "id": 2,
+      "artista": "Rihanna",
+      "nome": "Robyn Rihanna Fenty",
+      "genero": "feminino",
+      "profissao": ["cantora", "compositora", "atriz", "empresária"]
+    },
+
+    { 
+      "id": 3,
+      "artista": "Madonna",
+      "nome": "Madonna Louise Ciccone",
+      "genero": "feminino",
+      "profissao": ["cantora", "compositora", "produtora musical", "atriz", "escritora", "dançarina", "empresária"]
+    },
+
+    {
+      "id": 4,
+      "artista": "Nina Simone",
+      "nome": "Eunice Kathleen Waymon",
+      "genero": "feminino",
+      "profissao": ["pianista", "cantora", "compositora", "ativista política"]
+    },
+
+    {
+      "id": 5,
+      "artista": "Michael Jackson",
+      "nome": "Michael Joseph Jackson",
+      "genero": "masculino",
+      "profissao": ["cantor", "compositor", "dançarino", "filantropo"]
+    },
+
+    {
+      "id": 6,
+      "artista": "Lady Gaga",
+      "nome": "Stefani Joanne Angelina Germanotta",
+      "genero": "feminino",
+      "profissao": ["cantor", "compositora", "atriz", "produtora musical"]
+    },
+
+    {
+      "id": 7,
+      "artista": "Eminem",
+      "nome": "Marshall Bruce Mathers III",
+      "genero": "masculino",
+      "profissao": ["rapper", "compositor", "produtor musical", "ator"]
+    }
+]
