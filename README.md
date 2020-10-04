@@ -35,7 +35,7 @@ Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos
 
 ---
 
-### Opção 2 - Música
+### Opção 2 - Músicas
 
 ```json
 {
