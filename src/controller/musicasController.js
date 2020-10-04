@@ -8,19 +8,27 @@ const getAllArtists = (req, res) => {
 
 const getArtistByName = (req, res) => {
     const artista = req.params.nome;
-    const musicasFiltradasPorArtista = artistas.filter((musica) => musica.artista == artista);
+    const musicasFiltradasPorArtista = artistas.filter(
+		(musica) => musica.artista.toUpperCase() == artista.toUpperCase()
+);
     res.status(200).send(musicasFiltradasPorArtista)
 };
 
-const getByBanda = (req, res) => {
+const getByBand = (req, res) => {
     const banda = req.params.banda;
-    const bandaFiltrada = musicas.filter((musica) => musica.banda == banda);
+    const bandaFiltrada = musicas.filter((musica) => musica.banda.toUpperCase() == banda.toUpperCase()
+    );
     res.status(200).send(bandaFiltrada);
 }
 
 const getAllMusics = (req, res) => {
     console.log(req.url);
     res.status(200).send(musicas);
+}
+
+const getAllBands = (req, res) => {
+	const banda = musicas.map((musica) => musica.banda);
+	res.status(200).send(banda);
 }
 
 const getMusicById = (req, res) => {
@@ -35,10 +43,22 @@ const getMusicsSingle = (req, res) => {
     res.status(200).send(bandasSingle);
 }
 
+const getAllAlbuns = (req, res) => {
+	const albunsFiltrado = musicas.map((musica) => musica.album);
+	res.status(200).send(albunsFiltrado);
+};
+
+const getAlbum = (req, res) => {
+    const album = req.params.album;
+	const albumFiltrado = musicas.filter((musica) => musica.album.toUpperCase() == album.toUpperCase());
+	res.status(200).send(albumFiltrado);
+};
+
 const getAlbumByTitle = (req, res) => {
-    const album = req.params.titulo;
-    const musicasFiltradasPorAlbum = musicas.filter((musica) => musica.album == album);
-    res.status(200).send(musicasFiltradasPorAlbum);
+    const titulo = req.params.titulo;
+    const musicasFiltradasPorAlbum = musicas.filter((musica) => musica.titulo.toUpperCase() == titulo.toUpperCase());
+    const AlbumPorTitulo = musicasFiltradasPorAlbum.map((musica) => ({ "titulo": musica.titulo, "album": musica.album}));
+    res.status(200).send(AlbumPorTitulo);
 }
 
 const getAllRecords = (req, res) => {
@@ -52,7 +72,10 @@ module.exports = {
     getMusicById, 
     getAllArtists, 
     getArtistByName, 
-    getByBanda, 
+    getByBand,
+    getAllBands, 
     getMusicsSingle, 
-    getAllRecords
+    getAllRecords,
+    getAlbum,
+    getAllAlbuns
 };

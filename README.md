@@ -10,26 +10,28 @@ Olá, o repositório da semana 8 do curso de back-end do Projeto {Reprograma} é
 
 ## Temas
 
-Escolhemos os temas abaixo para desenvolver este projeto a partir deles, abaixo estão descritos o que cada contrato deve retornar.
+Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos o que cada contrato deve retornar.
 
 ---
 
-### Opção 1 - Jogos
+### Opção 1 - Artistas
 
 ```json
 {
   "id": 1,
-  "titulo": "Fall Guys",
-  "dataLancamento": "2020"
-}
+  "artista": "Beyoncé",
+  "nome": "Beyoncé Giselle Knowles-Carter",
+  "genero": "feminino",
+  "profissao": ["cantora", "compositora", "atriz", "modelo", "dançarina", "produtora musical", "roteirista"]
+},
 ```
 
 #### Contratos que deverão ser entregues:
 
-| Recurso      | Descrição                         |
-| ------------ | --------------------------------- |
-| `/jogos`     | Retorna todos os jogos            |
-| `/jogos/:id` | Retorna apenas um jogo específico |
+| Recurso         | Descrição                            |
+| --------------- | ------------------------------------ |
+| `/artistas`     | Retorna todos os artistas            |
+| `/artista/:nome`| Retorna apenas um artista específico |
 
 ---
 
@@ -38,31 +40,36 @@ Escolhemos os temas abaixo para desenvolver este projeto a partir deles, abaixo 
 ```json
 {
   "id": 1,
-  "titulo": "Evidências",
-  "duracao": "04:39"
-}
+  "titulo": "Sweet Child O' Mine",
+  "banda": "Guns N' Roses",
+  "anoLancamento": 1987,
+  "genero": ["Heavy metal", "Hard Rock", "Rock"],
+  "gravadora": "Geffen Records",
+  "duracao": "05:56",
+  "single": false,
+  "album": "Appetite for Destruction"
+},
 ```
 
 #### Contratos que deverão ser entregues:
 
-| Recurso        | Descrição                            |
-| -------------- | ------------------------------------ |
-| `/musicas`     | Retorna todas as músicas             |
-| `/musicas/:id` | Retorna apenas uma música específica |
+| Recurso          | Descrição                                  |
+| ---------------- | ------------------------------------------ |
+| `/musicas`       | Retorna todas as músicas                   |
+| `/musicas/:id`   | Retorna apenas uma música específica       |
+| `/musicas/banda` | Retorna todas as músicas com a mesma banda |
+| `/musicas/single`| Retorna todas músicas gravadas sólo        |
 
-#### Contratos opcionais:
-
-| Recurso         | Descrição                                 |
-| --------------- | ----------------------------------------- |
-| `/artistas`     | Retorna a lista de artistas               |
-| `/artistas/:id` | Retorna o artista e lista de músicas dele |
+---
 
 #### Contratos para ir ao infinito e além:
 
-| Recurso                   | Descrição                                            |
-| ------------------------- | ---------------------------------------------------- |
-| `/albuns`                 | Retorna o álbum com a lista de músicas daquele album |
-| `/albuns/[nome-do-album]` | Retorna um álbum específico filtrado pelo nome       |
+| Recurso                           | Descrição                                      |
+| --------------------------------- | ---------------------------------------------- |
+| `/album`                          | Retorna todos os albúns                        |
+| `/albuns/:titulo`                 | Retorna o álbum por nome de uma música         |
+| `/musicas/albuns/[nome-do-album]` | Retorna um álbum específico filtrado pelo nome |
+| `gravadora`                       | Retorna todas as gravadoras                    |
 
 ---
 
