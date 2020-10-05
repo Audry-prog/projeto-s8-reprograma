@@ -71,7 +71,7 @@ Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos
 | `/banda`                          | Retorna todas as bandas                        |
 | `/musicas/albuns/[nome-do-album]` | Retorna um álbum específico filtrado pelo nome |
 | `/gravadoras`                     | Retorna todas as gravadoras                    |
-| `/gravadora/[nome+da+gravadora]`  | Retorna todos os registros de uma gravadora    | 
+| `/gravadora/[nome-da-gravadora]`  | Retorna todos os registros de uma gravadora    | 
 
 ---
 

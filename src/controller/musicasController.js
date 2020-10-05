@@ -71,8 +71,11 @@ const getRecordByName = (req, res) => {
 
 const getMusicsSingle = (req, res) => {
 	const musicasFiltradasPorSingle = musicas.filter((musica) => musica.single === true);
-	const bandasSingle = musicasFiltradasPorSingle.map((musica) => ({ titulo: musica.titulo, banda: musica.banda }));
-	res.status(200).send(bandasSingle);
+	const musicasSinglePorTitulo = musicasFiltradasPorSingle.map((musica) => ({
+		"titulo": musica.titulo,
+		"banda": musica.banda,
+	}));
+	res.status(200).send(musicasSinglePorTitulo);
 };
 
 const getAllSeries = (req, res) => {
