@@ -5,7 +5,7 @@ const series = require('../model/series.json');
 const getAllArtists = (req, res) => {
     console.log(req.url);
     res.status(200).send(artistas);
-}
+};
 
 const getArtistByName = (req, res) => {
     const artista = req.params.nome;
@@ -25,24 +25,18 @@ const getByBand = (req, res) => {
 const getAllMusics = (req, res) => {
     console.log(req.url);
     res.status(200).send(musicas);
-}
+};
 
 const getAllBands = (req, res) => {
 	const banda = musicas.map((musica) => musica.banda);
 	res.status(200).send(banda);
-}
+};
 
 const getMusicById = (req, res) => {
     const id = req.params.id;
     const musicaFiltrada = musicas.find((musica) => musica.id == id);
     res.status(200).send(musicaFiltrada);
-}
-
-const getMusicsSingle = (req, res) => {
-    const musicasFiltradasPorSingle = musicas.filter((musica) => musica.single === true);
-    const bandasSingle = musicasFiltradasPorSingle.map((musica) => ({"titulo": musica.titulo, "banda": musica.banda}));
-    res.status(200).send(bandasSingle);
-}
+};
 
 const getAllAlbuns = (req, res) => {
 	const albunsFiltrado = musicas.map((musica) => musica.album);
@@ -60,12 +54,26 @@ const getAlbumByTitle = (req, res) => {
     const musicasFiltradasPorAlbum = musicas.filter((musica) => musica.titulo.toUpperCase() == titulo.toUpperCase());
     const AlbumPorTitulo = musicasFiltradasPorAlbum.map((musica) => ({ "titulo": musica.titulo, "album": musica.album}));
     res.status(200).send(AlbumPorTitulo);
-}
+};
 
 const getAllRecords = (req, res) => {
-    const gravadora = musicas.map((musica) => musica.gravadora);
-    res.status(200).send(gravadora);
-}
+    const gravadoras = musicas.map((musica) => musica.gravadora);
+    res.status(200).send(gravadoras);
+};
+
+const getRecordByName = (req, res) => {
+	const gravadora = req.params.nome;
+	const gravadoraFiltradaPorNome = musicas.filter(
+		(musica) => musica.gravadora.toUpperCase() == gravadora.toUpperCase()
+	);
+	res.status(200).send(gravadoraFiltradaPorNome);
+};
+
+const getMusicsSingle = (req, res) => {
+	const musicasFiltradasPorSingle = musicas.filter((musica) => musica.single === true);
+	const bandasSingle = musicasFiltradasPorSingle.map((musica) => ({ titulo: musica.titulo, banda: musica.banda }));
+	res.status(200).send(bandasSingle);
+};
 
 const getAllSeries = (req, res) => {
 	res.send(series);
@@ -81,7 +89,7 @@ const getSerieByTitulo = (req, res) => {
     const titulo = req.params.titulo;
     const seriePorTitulo = series.find((serie) => serie.titulo == titulo);
     res.send(seriePorTitulo);
-}
+};
 
 module.exports = {
 	getAlbumByTitle,
@@ -91,11 +99,12 @@ module.exports = {
 	getArtistByName,
 	getByBand,
 	getAllBands,
-	getMusicsSingle,
-	getAllRecords,
+    getAllRecords,
+    getRecordByName,
 	getAlbum,
 	getAllAlbuns,
+	getMusicsSingle,
 	getAllSeries,
-    getSerieById,
-    getSerieByTitulo,
+	getSerieById,
+	getSerieByTitulo,
 };

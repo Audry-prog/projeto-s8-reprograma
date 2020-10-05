@@ -6,7 +6,7 @@
     <p align="center">Projeto Prático - Semana 8<p>
 </h1>
 
-Olá, o repositório da semana 8 do curso de back-end do Projeto {Reprograma} é o resulatado do conteúdo visto sobre APIs, onde utilizamos o método GET para a filtragem de dados.
+Olá, o repositório da semana 8 do curso de back-end do Projeto {Reprograma} é o resultado do conteúdo visto sobre APIs, onde utilizamos o método GET para a filtragem de dados.
 
 ## Temas
 
@@ -70,13 +70,12 @@ Escolhemos os temas abaixo para desenvolver o projeto e a partir deles, listamos
 | `/albuns/:titulo`                 | Retorna o álbum por nome de uma música         |
 | `/banda`                          | Retorna todas as bandas                        |
 | `/musicas/albuns/[nome-do-album]` | Retorna um álbum específico filtrado pelo nome |
-| `/gravadora`                      | Retorna todas as gravadoras                    |
+| `/gravadoras`                     | Retorna todas as gravadoras                    |
+| `/gravadora/[nome+da+gravadora]`  | Retorna todos os registros de uma gravadora    | 
 
 ---
 
 ### Opção 3 - Séries
-
-### Séries
 
 ```json
 {
@@ -119,6 +118,6 @@ Agora vamos relembrar alguns conceitos importantes:
 - **V**iew: é a camada de interação com o usuário. Ela apenas faz a exibição dos dados, sendo ela por meio de um html ou xml.
 - **C**ontroller: O responsável por receber todas as requisições do usuário. Seus métodos chamados actions são responsáveis por uma página, controlando qual model usar e qual view será mostrado ao usuário.
 
-### Postman
+### Postman 
 
 Essa ferramenta permite testar serviços RESTful por meio do envio de requisições HTTP e da análise do seu retorno. Você pode salvar todas as suas _collections_ e facilitar o seu dia-a-dia como pessoa desenvolvedora!
